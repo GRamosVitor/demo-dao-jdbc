@@ -25,12 +25,17 @@ public class Program2 {
 			System.out.println(obj);
 		}
 		
-		System.out.println("==== TEST 3 : deleteById ====");
+		/*System.out.println("==== TEST 3 : deleteById ====");
 		System.out.print("Enter id for delete test: ");
 		int id = sc.nextInt();
 		departmentDao.deleteById(id);
-		System.out.println("Deleted");
+		System.out.println("Deleted");*/
 		
+		System.out.println("==== TEST 4 : update ====");
+		dep = departmentDao.findById(1);
+		dep.setName("Computer");
+		departmentDao.update(dep);
+		System.out.println("Update Completed!");
 		
 		
 		
